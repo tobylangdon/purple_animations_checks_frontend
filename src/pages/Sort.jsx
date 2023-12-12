@@ -10,6 +10,17 @@ export default function Sort(){
     const [arr, setArr] = useState([])
     const [allData, setAllData] = useState([])
 
+    const exportData = () => {
+        const jsonString = `data:text/json;chatset=utf-8,${encodeURIComponent(
+          JSON.stringify(allData)
+        )}`;
+        const link = document.createElement("a");
+        link.href = jsonString;
+        link.download = "data.json";
+    
+        link.click();
+      };
+
 
 
 
@@ -117,6 +128,8 @@ export default function Sort(){
 
         </div>
         <p style={{margin: 'auto', textAlign: 'center'}}>{allData.length} / 4000</p>
+
+        <button onClick={exportData}>Download data</button>
         </>)
     
 
