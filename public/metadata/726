@@ -1,0 +1,15 @@
+{
+  "name": "EGG #726",
+  "description": "DESCRIPTION",
+  "image": "REPLACE IMAGE HERE",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Super Rare"
+    },
+    {
+      "trait_type": "Animal",
+      "value": "Chicken"
+    }
+  ]
+}

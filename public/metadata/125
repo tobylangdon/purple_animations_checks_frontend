@@ -1,0 +1,15 @@
+{
+  "name": "EGG #125",
+  "description": "DESCRIPTION",
+  "image": "REPLACE IMAGE HERE",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Unique"
+    },
+    {
+      "trait_type": "Animal",
+      "value": "Monkey"
+    }
+  ]
+}

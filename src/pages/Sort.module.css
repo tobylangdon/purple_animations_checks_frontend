@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+    justify-content: center;
+}
+.imageToCheck{
+    width: 80%;
+}
+.left{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.right{
+    display: grid;
+    width:40%;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: aliceblue;
+}
+.right img{
+    width: 100%;
+}

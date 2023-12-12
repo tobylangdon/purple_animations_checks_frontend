@@ -1,0 +1,15 @@
+{
+  "name": "EGG #3150",
+  "description": "DESCRIPTION",
+  "image": "REPLACE IMAGE HERE",
+  "attributes": [
+    {
+      "trait_type": "Type",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Animal",
+      "value": "Chicken"
+    }
+  ]
+}
