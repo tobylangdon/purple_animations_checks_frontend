@@ -40,7 +40,7 @@ export default function Sort(){
       }
 
     useEffect(() => {
-        axios.get('http://localhost:4000/api/anim')
+        axios.get('https://purple-check-backend.onrender.com/api/anim')
             .then((res) => {
                 console.log(res.data)
                 setCurrImage(res.data.length)
@@ -52,7 +52,7 @@ export default function Sort(){
     }, [])
 
     const sendToDatabase = async (image_id, anim_id) => {
-        await axios.post('http://localhost:4000/api/anim', {image_id, anim_id})
+        await axios.post('https://purple-check-backend.onrender.com/api/anim', {image_id, anim_id})
             .then((res) => {
                 console.log(res.data)
                 setAllData(res.data)
