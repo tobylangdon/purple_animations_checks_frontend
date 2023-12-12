@@ -129,7 +129,10 @@ export default function Sort(){
         </div>
         <p style={{margin: 'auto', textAlign: 'center'}}>{allData.length} / 4000</p>
 
-        <button onClick={exportData}>Download data</button>
+
+        <input onChange={(e) => setCurrImage(e.target.value)}  type='number' placeholder="go to id"></input>
+        
+        <button style={{margin: '10px'}} onClick={exportData}>Download data</button>
         </>)
     
 
