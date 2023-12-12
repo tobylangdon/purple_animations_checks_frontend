@@ -14,7 +14,7 @@ export default function Sort(){
 
 
     const getData=()=>{
-        fetch(`metadata/${currImage}`
+        fetch(`data.json`
         ,{
           headers : { 
             'Content-Type': 'application/json',
@@ -29,8 +29,8 @@ export default function Sort(){
             return response.json()
           })
           .then(function(response) {
-            console.log(response.attributes)
-            if(response.attributes[1].value === 'Shark'){
+            // console.log(response.data)
+            if(response.data[currImage].attributes[1].value === 'Shark'){
                 setIsShark(true)
             }
             else{
@@ -91,9 +91,9 @@ export default function Sort(){
     return(
     <><div className={styles.main}>
             <div className={styles.left}>
-                <img className={styles.imageToCheck} src={`images/${currImage}.gif`}/>
+                <img className={styles.imageToCheck} src={`https://ipfs.filebase.io/ipfs/QmVatn6pGcc1vtygFhaCGYoKBTG8p2XfUMwZmfwNSh7umu/${currImage}.gif`}/>
                 <div className={styles.arrows}>
-                    <p>{arr[arr.length - 2 ]}</p>
+                    {/* <p>{arr[arr.length - 2 ]}</p> */}
                     <button onClick={() => setCurrImage(currImage - 1)}>Back</button>
                     <button onClick={() => setCurrImage(currImage + 1)}>Forward</button>
                 </div>

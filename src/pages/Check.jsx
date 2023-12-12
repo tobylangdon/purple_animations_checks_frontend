@@ -19,11 +19,11 @@ export default function Check(){
     return(<div>
            {allData.map((d) => {
             return(
-                <>
-                    <img width='20%' src={`images/${d.image_id}.gif`}/>
-                    <p>Anim ID : {d.anim_id}</p>
+                <div className='checkCont'>
+                    <img width='20%' src={`https://ipfs.filebase.io/ipfs/QmVatn6pGcc1vtygFhaCGYoKBTG8p2XfUMwZmfwNSh7umu/${d.image_id}.gif`}/>
+                    <img width='20%' src={`normal/${d.anim_id}.gif`}/>
                 
-                </>
+                </div>
 
             )
            })} 
